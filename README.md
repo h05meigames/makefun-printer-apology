@@ -8,9 +8,9 @@ Entry for the [make.fun bounty "The Printer Apology"](https://make.fun/bounty/u-
 
 ## The line
 
-> Sorry I jammed — you fed me bargain paper, a staple, and a 4:59 p.m. deadline. I choked on all three.
+> Sorry I jammed — you fed me bargain paper, a 4:59 p.m. deadline, and a stream of curses. I choked on all three.
 
-**101 characters** (≤ 120).
+**111 characters** (≤ 120).
 
 ## How it runs
 

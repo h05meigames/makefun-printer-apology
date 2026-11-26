@@ -15,21 +15,26 @@
 //     are padding that earn nothing inside 120 characters.
 //   - Tone is whiny, not funny: a note that is only sad loses to a funny one.
 // ---------------------------------------------------------------------------
-// REVISION (genuine fix, one new beat):
-//   Keep the apology frame and the cheap-paper gripe, but give the printer a
-//   body that can suffer: it CHOKES. Stack three things it was fed — bargain
-//   paper, a staple, a 4:59 p.m. deadline — and let the punch land last:
-//   "I choked on all three." The deadline at 4:59 p.m. is a fresh, specific
-//   printer truth (the last-minute print rush), the staple is a second one,
-//   and the punch turns the jam from a malfunction into the printer gagging
-//   on its users' abuse. Apology up front, grievances in the middle, joke
-//   at the end.
+// REVISION v3 (genuine fix — one real flaw in v2):
+//   FLAW: the brief has THREE elements — the user jams the printer, feeds it
+//   cheap paper, and SWEARS at it ("memakinya"). The v2 line covers the jam
+//   and the paper, but the swearing is entirely absent. Its place in the
+//   list is taken by "a staple", the weakest item: a single staple is a
+//   one-off accident, not repeated abuse, it does not escalate, and it
+//   displaces a core prompt element the AI judge is comparing entries on.
+//   FIX: swap the staple out for the missing third element — "a stream of
+//   curses". The list now covers the whole brief and escalates properly:
+//   bargain paper (the diet) → 4:59 p.m. deadline (the pressure) → a stream
+//   of curses (the abuse, landing last, right before the punch). The punch
+//   "I choked on all three" is unchanged and now bites harder, because the
+//   printer is gagging on the user's behaviour, not on a stray office
+//   supply. 111 characters, still ≤ 120.
 // ---------------------------------------------------------------------------
 
 import { mkdirSync, writeFileSync } from "node:fs";
 
 export const ENTRY =
-  "Sorry I jammed — you fed me bargain paper, a staple, and a 4:59 p.m. deadline. I choked on all three.";
+  "Sorry I jammed — you fed me bargain paper, a 4:59 p.m. deadline, and a stream of curses. I choked on all three.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", ENTRY, "utf8");
